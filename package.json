@@ -1,0 +1,53 @@
+{
+  "name": "merlin_blog",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "prettier": "lint-staged",
+    "start": "nodemon --inspect src/index.js",
+    "wScss": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayane1204/merlin_blog.git"
+  },
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --write"
+  },
+  "keywords": [
+    "cucaido",
+    "foraye",
+    "Merlin",
+    "Berlin",
+    "Ayane"
+  ],
+  "author": "cucaido.foraye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ayane1204/merlin_blog/issues"
+  },
+  "homepage": "https://github.com/Ayane1204/merlin_blog#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.1",
+    "nodemailer": "^6.9.16",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  },
+  "description": ""
+}
