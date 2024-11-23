@@ -1,0 +1,21 @@
+{
+  "name": "my-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "jest",
+    "start": "node foo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lythanhgiahung/WibuForces-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lythanhgiahung/WibuForces-demo/issues"
+  },
+  "homepage": "https://github.com/lythanhgiahung/WibuForces-demo#readme"
+}
