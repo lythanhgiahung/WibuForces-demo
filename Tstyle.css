@@ -1,0 +1,13 @@
+.lesson{
+    position: relative;
+    top: 25px;
+}
+.lesson ul{
+    padding: 15px 25px;
+    list-style: none;
+    display: flex;
+}
+.lesson ul li{
+    padding: 15px 25px;
+    border: 2px solid black;
+}

@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+ul {
+    list-style: none;
+    background: black;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+ul li a:hover{
+    background: gray;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+--HTML--
+<a href="slider-img-2" class="button"></a>
+<a href="slider-img-3" class="button"></a>
+<a href="slider-img-4" class="button"></a>
+<a href="slider-img-5" class="button"></a>
+<a href="slider-img-6" class="button"></a>
+
+<div id="slider-img-3"></div>
+<div id="slider-img-4"></div>
+<div id="slider-img-5"></div>
+<div id="slider-img-6"></div>
+
+-- JavaScript --
+$(function(){
+    $(".toggle").on("click", function(){
+        if($(".menu").hasClass('active')){
+            $(".menu").removeClass("active");
+            $(this).find("a").html("<ion-icon name='grid-outline'></ion-icon>")
+        }else{
+            $(".menu").addClass("active")
+            $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>")
+        }
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
